@@ -1,0 +1,290 @@
+body {
+	margin: 0 auto;
+}
+#contener{
+	margin: 0 auto;
+	width: 450px;
+	height: 787px;
+	background: #0c0c0d;
+	padding: 15px;
+	/* clear: both; */
+	padding-top: 0;
+}
+/*----------------------------------------------Label-----------------------------------------------------------------*/
+#contener label{
+	font-family: Segoe UI,Arial, Helvetica, sans-serif;
+	color: #fcfcfc;
+	/* margin-left: 15px; */
+	font-size: 14px;
+	float: left;
+	/* vertical-align: middle; */
+	/* clear: both;  */
+	
+}
+#contener label[for="msg_id"] {
+	top: 86px;
+	position: relative;
+}
+#contener label[for="email_id"] {
+	margin-top: -3px;
+}
+#contener strong {
+	color: #7b89c7;
+}
+
+#contener h2 {
+	color: #7b89c7;
+	/* margin-left: 15px; */
+	font-family: Segoe UI,Arial, Helvetica, sans-serif;
+	/* font-size: 20px; */
+	margin: 0px;
+	
+}
+
+label[for="captcha_id"] {
+	margin-top: 5px;
+	letter-spacing: 0.1pt;
+}
+
+/*------------------------------------------------Input-------------------------------------------------*/
+
+#contener input {
+	/* margin-right: 15px; */
+	/* float: right; */
+	width: 230px;
+	height: 23px;
+	border-radius: 4px;
+	box-shadow: 0 0 6px #424242;
+	background-color: #fcfcfc;
+	clear: both;
+	border: none;
+}
+
+#name_id {
+	/* margin-top: 3px; */
+}
+
+
+#contener textarea {
+	/* margin-right: 15px; */
+	/* float: right; */
+	width: 230px;
+	height: 207px;
+	border-radius: 4px;
+	box-shadow: 0 0 6px #424242;
+	background-color: #fcfcfc;
+	clear: both;
+
+}
+#contener input[type="submit"] {
+	/* margin-left: 15px; */
+	float: left;
+	width: 114px;
+	height: 24px;
+	border-radius: 4px;
+	background: -moz-linear-gradient(bottom, #4c556e 0%,#464e66 30%,#424a61 51%,#394054 100%);
+    background: -webkit-linear-gradient(bottom, #4b536e 0%,#383e52 100%);
+    background: -o-linear-gradient(bottom, #4c556e 0%,#464e66 30%,#424a61 51%,#394054 100%);
+    background: -ms-linear-gradient(bottom, #4c556e 0%,#464e66 30%,#424a61 51%,#394054 100%);
+    color: #fcfcfc;
+	border: none;
+	box-shadow: none;
+}
+#messages {
+		height: 326px;
+		overflow-y: auto;
+		
+}
+/*---------------------------------------------Comment user------------------------------------------------------------*/
+
+#user_msg {
+	color: #f0f0f0;
+	font-family: Segoe UI,Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 10px;
+	margin: 0px;
+	word-wrap: break-word;
+	text-indent: 1em;
+	letter-spacing: 0.2pt;
+	padding-top: 5px;
+}
+
+#user_name {
+	color: #fcfcfc;
+	font-size: 21px;
+	font-family: Segoe UI,Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	padding: 5px;
+	letter-spacing: 0.2pt;
+	
+}
+#user_date {
+	color: #fcfcfc;
+	float: right;
+	font-family: Segoe UI,Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	clear: both;
+	position:relative;
+	top: 10px;
+	margin-right:5px;
+}
+
+.comment1 {
+	margin-top: 10px;
+	background: #0f0f0f;
+	padding: 0px;
+	
+}
+.comment0 {
+	margin-top: 10px;
+	background: #262626;
+	padding: 0px;
+	
+}
+
+hr {
+	border: none; /* Убираем границу */
+    background-color: #525252; /* Цвет линии */
+    color: #525252; /* Цвет линии для IE6-7 */
+    height: 1px; /* Толщина линии */
+	margin: 0px;
+	margin-top: 4px;
+	margin-bottom: 0px;
+	
+}
+#form {
+	margin-top: 30px;
+}
+
+.field {
+	/* margin-top: 15px; */
+	clear: both;
+	text-align: right;
+}
+.field input[type="text"]{
+	/* margin-top: 3px; */
+}
+
+button {
+	background-image: url("../img/reload.png");
+	/* background-repeat:repeat-x; */
+	width: 28px;
+	height: 30px;
+	border: 0;
+	margin-right: 80px;
+	float: right;
+	margin-top: -10px;
+}
+
+
+#captcha {
+	margin-top: -10px;
+	margin-right: 10px;
+	
+}
+#captcha_id {
+	width: 71px !important;
+	margin-top: -29px;
+	margin-right: 4px;
+	float: right;
+}
+
+ input[type="submit"] {
+	 margin-top: 4px;
+ }
+/* --------------------------------------------------------меню-------------------------------------------------------------------------- */
+
+
+
+#mainmenu
+{
+	float:left;
+}
+#mainmenu ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#mainmenu ul li
+{
+	position: relative;
+	float:left;
+}
+#mainmenu ul li ul, #mainmenu ul li ul li
+{
+	width:130px;
+}
+#mainmenu li ul
+{
+	position: absolute;
+	left: 0;
+	top: 29px;
+	display: none;
+	float:left;
+}
+#mainmenu ul li a 
+{
+	
+	float:left;
+	color: black;
+	width:140px;
+	font-size:16px;
+	padding: 5px 0 5px 0;
+	text-align:center;
+	background: #CCCCCC;
+}
+#mainmenu li ul li a
+{
+	margin-top: -2px;
+	padding:5px 0 3px 10px;
+	text-align:center;
+	font-size:18px;
+	width:120px;
+	background: #EEEEEE;
+}
+#mainmenu li ul li a:hover
+{
+	background: #152C36;
+	color:White;
+}
+* html #mainmenu ul li { float: left; height: 1%; }
+* html #mainmenu ul li a { height: 1%; }
+#mainmenu li:hover ul, 
+#mainmenu  li.over ul { display: block; }
+
+
+/*-------------------------------------------------------Пагинация----------------------------------------------------------*/
+#pagination a{
+	color: #7b89c7;
+	text-decoration: none;
+
+}
+
+#pagination span{
+	color: #ffffff;
+}
+#pagination {
+	text-align: center;
+	color: #ffffff;
+}
+#pagination b{
+	color: #fff;
+}
+
+#loginform input {
+
+	float:right;
+
+}
+#loginform label {
+position: relative;
+	top:20px;
+}
+#logform {
+	float: right;
+}
+#hello{
+	float: right;
+}
