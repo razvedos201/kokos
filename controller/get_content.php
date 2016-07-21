@@ -9,7 +9,7 @@ $query =  "select * from messages ORDER BY id DESC";
 $result = mysqli_query($connect,$query) or die("Ошибка: " . mysqli_error());
 $rows_max = mysqli_num_rows($result);
 $show_pages = 4;
-$this_page = filter_var($_GET['page'], FILTER_SANITIZE_NUMBER_INT);
+$this_page = filter_var($_GET['p'], FILTER_SANITIZE_NUMBER_INT);
 if ($this_page)
 {
         $offset = (($show_pages * $this_page) - $show_pages);

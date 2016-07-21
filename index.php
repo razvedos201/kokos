@@ -1,8 +1,5 @@
 <?php session_start() ?>
 
-
-
-
 <html>
 	<head>
 		<title>form</title>

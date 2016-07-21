@@ -4,7 +4,7 @@
 		require_once(__DIR__."/../controller/get_content.php");
 		
 		$id = 1;
-		while ($row = mysqli_fetch_array($final_result, MYSQL_ASSOC)) {
+		while ($row = mysqli_fetch_assoc($final_result)) {
 			
 			if($id == 1)
 				$id=0;
@@ -30,7 +30,7 @@
 <div id="pagination">
 	<?php
 		require_once('view_pagination.php');
-		echo handle_pagination(100, (int)$_GET['p'], 10, '?p=');
+		echo handle_pagination($rows_max, (int)$_GET['p'], $show_pages, '?p=');
 
 	?>
 </div>
