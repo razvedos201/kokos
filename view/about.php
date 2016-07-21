@@ -5,13 +5,8 @@
 		
 		$id = 1;
 		while ($row = mysqli_fetch_assoc($final_result)) {
-			
-			if($id == 1)
-				$id=0;
-			else
-				$id=1;
 	?>
-		<div class="comment<?php echo $id?>">
+		<div class="comment">
 			<span id="user_name"><?php echo $row["name"]?></span>
 			<span id="user_date"><?php echo str_replace(":",".",date("d:m:Y",$row["date"]))?></span>
 			<hr>

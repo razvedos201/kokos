@@ -4,10 +4,10 @@ body {
 #contener{
 	margin: 0 auto;
 	width: 450px;
-	/*height: 787px;*/
+	min-height: 100%;
 	background: #0c0c0d;
 	padding: 15px;
-	/* clear: both; */
+
 	padding-top: 0;
 }
 /*----------------------------------------------Label-----------------------------------------------------------------*/
@@ -17,17 +17,12 @@ body {
 	/* margin-left: 15px; */
 	font-size: 14px;
 	float: left;
-	/* vertical-align: middle; */
+	 vertical-align: middle;
 	/* clear: both;  */
 	
 }
-#contener label[for="msg_id"] {
-	top: 86px;
-	position: relative;
-}
-#contener label[for="email_id"] {
-	margin-top: -3px;
-}
+
+
 #contener strong {
 	color: #7b89c7;
 }
@@ -41,16 +36,12 @@ body {
 	
 }
 
-label[for="captcha_id"] {
-	margin-top: 5px;
-	letter-spacing: 0.1pt;
-}
 
 /*------------------------------------------------Input-------------------------------------------------*/
 
 #contener input {
 	/* margin-right: 15px; */
-	/* float: right; */
+	float: right;
 	width: 230px;
 	height: 23px;
 	border-radius: 4px;
@@ -67,7 +58,7 @@ label[for="captcha_id"] {
 
 #contener textarea {
 	/* margin-right: 15px; */
-	/* float: right; */
+	float: right;
 	width: 230px;
 	height: 207px;
 	border-radius: 4px;
@@ -124,23 +115,22 @@ label[for="captcha_id"] {
 	font-family: Segoe UI,Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	font-size: 14px;
-	clear: both;
 	position:relative;
 	top: 10px;
 	margin-right:5px;
 }
 
-.comment1 {
+.comment {
 	margin-top: 10px;
-	background: #0f0f0f;
 	padding: 0px;
 
 }
-.comment0 {
-	margin-top: 10px;
+.comment:nth-child(odd) {
 	background: #262626;
-	padding: 0px;
+}
 
+.comment:nth-child(even) {
+	background: #0f0f0f;
 }
 
 hr {
@@ -260,13 +250,10 @@ position: relative;
 }
 
 td {
-	/*border: 2px solid gray;*/
-}
+	padding-bottom: 13px;
 
+}
 table {
 
 	width: 455px;
-}
-form label {
-	vertical-align: middle;
 }
