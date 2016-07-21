@@ -2,21 +2,16 @@
 <div id="messages">
 	<?php 
 		require_once(__DIR__."/../controller/get_content.php");
-		
-		$id = 1;
-		while ($row = mysqli_fetch_assoc($final_result)) {
+		while ($row = mysqli_fetch_assoc($final_result)) :
 	?>
 		<div class="comment">
 			<span id="user_name"><?php echo $row["name"]?></span>
-			<span id="user_date"><?php echo str_replace(":",".",date("d:m:Y",$row["date"]))?></span>
+			<span id="user_date"><?= date("d.m.Y",$row["date"])?></span>
 			<hr>
 			<p id="user_msg"><?php echo $row["msg"]?></p>
 		</div>
 		   
-	<?php
-		
-		}
-	?>
+	<?php endwhile ?>
 
 
 
@@ -36,7 +31,7 @@
 
 			<tr>
 				<td><label for="name_id">Имя <strong>*</strong></label></td>
-				<td><input type="text" name="name" id="name_id" required></td>
+				<td><input type="text" name="name" id="name_id" value="<?= $_SESSION['name']?>"required></td>
 			</tr>
 
 			<tr>

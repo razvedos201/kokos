@@ -23,4 +23,5 @@ else
 
 $query_limited = "SELECT name, msg, date FROM messages ORDER BY `date` DESC limit $offset,$show_pages";
 $final_result = mysqli_query($connect,$query_limited) or die("Ошибка: " . mysqli_error());
+mysqli_close($connect);
 

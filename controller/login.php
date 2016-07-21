@@ -4,12 +4,9 @@ if(isset($_POST['enter'])) {
     $e_login = $_POST['e_login'];
     $e_password = md5($_POST['e_password']);
     $query = "SELECT * FROM users WHERE login = '$e_login'";
-    //echo $query;
-    //exit();
     $result = mysqli_query($connect, $query) or die("Ошибка: " . mysqli_error($connect));
     $user_data = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    //var_dump($user_data);
-//echo $user_data['password'];
+
     if ($user_data['password'] == $e_password) {
        
         session_start();

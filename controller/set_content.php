@@ -31,6 +31,7 @@ if($success['success'] == false) {
 
 	$query = 'INSERT INTO messages (name, msg, date) VALUES ("' . $name . '", "' . $msg . '", "' . $date . '")';
 	mysqli_query($connect,$query) or die("Ошибка:" . mysqli_error());
+	 mysqli_close($connect);
 	header("Location: ../index.php");
  }
 

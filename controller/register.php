@@ -5,7 +5,21 @@ if(isset($_POST['register'])){
 	$login = $_POST['login'];
 	$password = md5($_POST['password']);
 	$r_password = md5($_POST['r_password']);
+	$query = "SELECT * FROM users WHERE login = '$login'";
+	$result = mysqli_query($connect, $query) or die("Ошибка: " . mysqli_error($connect));
+	$user_data = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
+	if ($user_data['login'] == $login) {
+		$var = 'Пользователь с таким логином уже существует';
+		print '<script language="javascript">alert("' . $var . '");window.location = "../index.php?view=register";</script>';
+		exit();
+	}
+
+	if ($_POST['password'] == $login) {
+		$var = 'Логин и пароль не должны совпадать';
+		print '<script language="javascript">alert("' . $var . '");window.location = "../index.php?view=register";</script>';
+		exit();
+	}
 	if($password == $r_password){
 
 		$query = "INSERT INTO users VALUES('','$username','$login','$password')";
@@ -16,8 +30,10 @@ if(isset($_POST['register'])){
 	else{
 		die("Пароли не совпадают");
 	}
-}
 
+
+}
+mysqli_close($connect);
 ?>
 <div id="loginform">
 	<form action="controller/register.php" method="post">

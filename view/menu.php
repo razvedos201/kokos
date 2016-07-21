@@ -13,4 +13,3 @@ foreach($menuItems as $menuItemId => $menuItem) {
          '>', $menuItem, '</a></li>';
 }
 echo '</ul>';
-?>
