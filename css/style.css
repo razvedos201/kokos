@@ -233,18 +233,6 @@ hr {
 	color: #fff;
 }
 
-#loginform input {
-
-	float:right;
-
-}
-#loginform label {
-position: relative;
-	top:20px;
-}
-#logform {
-	float: right;
-}
 #hello{
 	float: right;
 }
