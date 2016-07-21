@@ -4,7 +4,7 @@ body {
 #contener{
 	margin: 0 auto;
 	width: 450px;
-	height: 787px;
+	/*height: 787px;*/
 	background: #0c0c0d;
 	padding: 15px;
 	/* clear: both; */
@@ -91,8 +91,8 @@ label[for="captcha_id"] {
 	box-shadow: none;
 }
 #messages {
-		height: 326px;
-		overflow-y: auto;
+
+
 		
 }
 /*---------------------------------------------Comment user------------------------------------------------------------*/
@@ -134,13 +134,13 @@ label[for="captcha_id"] {
 	margin-top: 10px;
 	background: #0f0f0f;
 	padding: 0px;
-	
+
 }
 .comment0 {
 	margin-top: 10px;
 	background: #262626;
 	padding: 0px;
-	
+
 }
 
 hr {
@@ -157,42 +157,12 @@ hr {
 	margin-top: 30px;
 }
 
-.field {
-	/* margin-top: 15px; */
-	clear: both;
-	text-align: right;
-}
-.field input[type="text"]{
-	/* margin-top: 3px; */
-}
-
-button {
-	background-image: url("../img/reload.png");
-	/* background-repeat:repeat-x; */
-	width: 28px;
-	height: 30px;
-	border: 0;
-	margin-right: 80px;
-	float: right;
-	margin-top: -10px;
-}
 
 
-#captcha {
-	margin-top: -10px;
-	margin-right: 10px;
-	
-}
-#captcha_id {
-	width: 71px !important;
-	margin-top: -29px;
-	margin-right: 4px;
-	float: right;
-}
 
- input[type="submit"] {
-	 margin-top: 4px;
- }
+
+
+
 /* --------------------------------------------------------меню-------------------------------------------------------------------------- */
 
 
@@ -287,4 +257,16 @@ position: relative;
 }
 #hello{
 	float: right;
+}
+
+td {
+	/*border: 2px solid gray;*/
+}
+
+table {
+
+	width: 455px;
+}
+form label {
+	vertical-align: middle;
 }

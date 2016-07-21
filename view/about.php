@@ -35,4 +35,34 @@
 	?>
 </div>
 
-<?php require_once('form.php');?>
+<div id="form">
+	<form action="controller/set_content.php" method="post">
+		<table>
+
+			<tr>
+				<td><label for="name_id">Имя <strong>*</strong></label></td>
+				<td><input type="text" name="name" id="name_id" required></td>
+			</tr>
+
+			<tr>
+				<td><label for="email_id">Email</label></td>
+				<td><input type="email" name="email" id="email_id" required="required"></td>
+			</tr>
+
+			<tr>
+				<td><label for="msg_id">Cодержание <strong>*</strong></label></td>
+				<td><textarea name="msg" id="msg_id"></textarea></td>
+			</tr>
+
+			<tr>
+				<td><div class="g-recaptcha" data-sitekey="6LfchCUTAAAAAJ-Z7DEg26ZtKp10PgDlUmIEB0o1" data-size="compact" data-theme="dark"></div></td>
+
+			</tr>
+
+			<tr>
+				<td><input type="submit" value="Оставить отзыв"></td>
+			</tr>
+		</table>
+	</form>
+
+</div>

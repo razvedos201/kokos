@@ -5,8 +5,8 @@ function handle_pagination($total, $page, $shown, $url) {
     $range_end = ( (($page + 5) > $pages ) ? $pages : ($page + 5) );
 
     if ( $page >= 1 ) {
-        $r[] = '<span><a href="'. $url .'">&laquo; first</a></span>';
-        $r[] = '<span><a href="'. $url . ( $page - 1 ) .'">&lsaquo; previous</a></span>';
+        $r[] = '<span><a href="'. $url .'">&laquo; первая</a></span>';
+        $r[] = '<span><a href="'. $url . ( $page - 1 ) .'">&lsaquo; предыдущая</a></span>';
         $r[] = ( ($range_start > 1) ? ' ... ' : '' );
     }
 
@@ -19,8 +19,8 @@ function handle_pagination($total, $page, $shown, $url) {
 
     if ( ( $page + 1 ) < $pages ) {
         $r[] = ( ($range_end < $pages) ? ' ... ' : '' );
-        $r[] = '<span><a href="'. $url . ( $page + 1 ) .'">next &rsaquo;</a></span>';
-        $r[] = '<span><a href="'. $url . ( $pages - 1 ) .'">last &raquo;</a></span>';
+        $r[] = '<span><a href="'. $url . ( $page + 1 ) .'">следующая &rsaquo;</a></span>';
+        $r[] = '<span><a href="'. $url . ( $pages - 1 ) .'">последняя &raquo;</a></span>';
     }
 
     return ( (isset($r)) ? '<div>'. implode("\r\n", $r) .'</div>' : '');

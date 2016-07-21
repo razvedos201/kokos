@@ -8,7 +8,7 @@ require_once('db_connect.php');
 $query =  "select * from messages ORDER BY id DESC";
 $result = mysqli_query($connect,$query) or die("Ошибка: " . mysqli_error());
 $rows_max = mysqli_num_rows($result);
-$show_pages = 4;
+$show_pages = 10;
 $this_page = filter_var($_GET['p'], FILTER_SANITIZE_NUMBER_INT);
 if ($this_page)
 {

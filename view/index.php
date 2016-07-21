@@ -5,16 +5,8 @@
 		<link rel="stylesheet" media="screen" href="css/style.css" >
 	</head>
 		<body>
-		<?require_once 'code/includes/main.php';
 
-			$user = new User();
-
-			if(!$user->loggedIn()){
-			redirect('code/index.php');
-			}
-		?>
-		<!--<?php //include('view/menu.php');?>-->
-			<div id="mainmenu">
+		<div id="mainmenu">
 					<ul id="nav">
 						<li><a href="?view=about" class="active">Отзывы о нас</a>
 							<ul>
